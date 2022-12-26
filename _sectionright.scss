@@ -1,0 +1,106 @@
+.sti{
+    position: sticky;
+    top: 0;
+    
+}
+.right{
+    background: linear-gradient(to bottom, #151728 0%, #151728 100%, rgba(21, 23, 40, 0) 100%);
+  
+   
+   
+   
+    .main{
+      
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+         color: #9c9cab;
+         gap: 1rem;
+        img{
+            border-radius: 50%;
+            width: 2rem;
+            border: 1px solid lightblue;
+        }
+       
+    }
+    .stories{
+        margin-top: 1.5rem ;
+        padding: 1rem;
+        border-bottom: 0.5px solid  rgba(255, 255, 255, 0.55); 
+    }
+    #st{
+        color: #5c5e6e;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+    }
+    .person1{ 
+        gap: 0.5rem;
+        display: flex;
+        align-items: center;
+        margin-top: 1.5rem;
+     
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        span{
+            color: white;
+        }
+        }
+        img{
+            border-radius: 50%;
+            width: 3rem;
+            border: 2px solid yellow;
+
+        }
+    }
+
+
+    .contact{
+        padding-top:2.5rem;
+        padding: 1rem;
+        #cont{
+            color: #5c5e6e;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom:2rem;
+        }
+        .person5{
+            display: flex;
+            margin-bottom: 1rem;
+            gap: 1rem;
+            align-items: center;
+            
+          
+        }
+        .person6{
+            display: flex;
+            align-items:center;
+            gap: 1rem;
+            span{
+                color: green;
+                font-weight: 1000;
+            }
+    
+    }
+    
+}
+.setting{
+    border-top: 1px solid rgba(255, 255, 255, 0.55); 
+    margin-top: 2.5rem;
+    padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+ 
+    
+   
+    i{
+     color: #9c9cab;
+    }
+    input{
+        border: none;
+        outline: none;
+        width: 100%;
+        background: linear-gradient(to bottom, #151728 0%, #151728 100%, rgba(21, 23, 40, 0) 100%);
+    }
+}

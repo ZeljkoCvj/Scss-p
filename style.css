@@ -1,0 +1,605 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainsection {
+  width: 100%;
+  display: flex;
+  background: linear-gradient(to bottom, #151728 0%, #151728 100%, rgba(21, 23, 40, 0) 100%);
+}
+
+.left .stiki {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.left #name {
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  color: white;
+  letter-spacing: 4px;
+}
+.left .menu {
+  color: #5c5e6e;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 4rem 2rem 2rem 2rem;
+}
+.left .navbar {
+  padding-left: 2rem;
+  color: #9c9cab;
+}
+.left .navbar #navigacija {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.left .navbar #navigacija #li {
+  padding-bottom: 1rem;
+}
+.left .navbar #navigacija #li #a {
+  display: flex;
+  gap: 0.6rem;
+}
+.left .navbar #navigacija #li #a a {
+  display: flex;
+  text-decoration: none;
+  color: #9c9cab;
+}
+.left .navbar #navigacija #li #a i {
+  color: #9c9cab;
+  width: 21px;
+}
+.left .navbar #navigacija #li #a a:hover {
+  color: wheat;
+}
+.left .favorite {
+  padding: 3rem 0rem 0rem 2rem;
+}
+.left .favorite p {
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+  color: #5c5e6e;
+  font-weight: 600;
+}
+.left .favorite .navbar2 #navigacija2 {
+  list-style: none;
+}
+.left .favorite .navbar2 #navigacija2 #id {
+  padding-bottom: 1rem;
+}
+.left .favorite .navbar2 #navigacija2 #id #li2 {
+  display: flex;
+  gap: 1.2rem;
+}
+.left .favorite .navbar2 #navigacija2 #id #li2 i {
+  color: #9c9cab;
+  width: 15px;
+}
+.left .favorite .navbar2 #navigacija2 #id #li2 a {
+  text-decoration: none;
+  color: #9c9cab;
+}
+.left .favorite .navbar2 #navigacija2 #id #li2 a:hover {
+  color: wheat;
+}
+.left .twiter {
+  border-top: 1px solid rgba(255, 255, 255, 0.55);
+  display: flex;
+  padding: 2rem 0 0 1rem;
+  position: relative;
+  color: #9c9cab;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+  /* &:hover::after{
+      content: attr(data-tooltip);
+      position: absolute;
+      top:3rem;
+      left: 5rem;
+  */
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.ss {
+  z-index: 3;
+}
+.ss .s {
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  padding-top: 1rem;
+  position: relative;
+  background-color: #151728;
+  align-content: center;
+}
+.ss .s i {
+  color: #9c9cab;
+  margin-left: 1rem;
+}
+.ss .s input {
+  background-color: transparent;
+  border: 0px solid;
+  width: 100%;
+  outline: none;
+}
+
+.midlele {
+  width: 100%;
+  background: linear-gradient(to bottom, #151728 0%, #151728 76%, rgba(21, 23, 40, 0) 100%);
+  position: relative;
+}
+.midlele .middle {
+  background-color: #080914;
+  overflow-y: scroll;
+  height: 696px;
+}
+.midlele .middle::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+.midlele .middle::-webkit-scrollbar {
+  width: 10px;
+}
+.midlele .middle::-webkit-scrollbar-thumb {
+  background: #9c9cab;
+  border-radius: 10px;
+}
+.midlele .middle::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+.midlele .middle .sectionholder {
+  padding: 1rem;
+}
+.midlele .middle .background {
+  position: relative;
+}
+.midlele .middle .background .timeline {
+  position: relative;
+  top: -4.2rem;
+  background: #05050c;
+  display: flex;
+  height: 2px;
+  align-items: center;
+  padding: 2rem;
+}
+.midlele .middle .background .timeline .tm {
+  display: flex;
+  list-style: none;
+  color: rgba(245, 222, 179, 0.233);
+  margin-left: 10rem;
+  cursor: pointer;
+}
+.midlele .middle .background .timeline .tm #active {
+  background-color: rgba(224, 222, 222, 0.283);
+  color: white;
+  border-bottom: 2px solid rgb(129, 129, 213);
+}
+.midlele .middle .background .timeline .tm .tml {
+  padding: 1.5rem;
+}
+.midlele .middle .background .timeline .tm .tml:hover {
+  transition: 0.5s;
+  background-color: rgba(224, 222, 222, 0.283);
+  color: white;
+  border-bottom: 2px solid rgb(129, 129, 213);
+}
+.midlele .middle .background img {
+  width: 100%;
+  height: 45vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 4px;
+}
+.midlele .middle .background .imgc {
+  position: absolute;
+  top: 10rem;
+  left: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.midlele .middle .background .imgc p {
+  width: 80%;
+  position: absolute;
+  font-size: 1.5rem;
+  color: white;
+  margin-left: 10rem;
+}
+.midlele .middle .background .imgc .img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 3px solid #151728;
+  z-index: 1;
+  margin-left: -1rem;
+}
+.midlele .middle .mainperson {
+  display: flex;
+}
+.midlele .middle .mainperson .main1 .introduction {
+  padding-bottom: 2rem;
+  background-color: #05050c;
+  margin: 1rem;
+  border-radius: 4px;
+}
+.midlele .middle .mainperson .main1 .introduction p {
+  margin-top: -5rem;
+  color: #5c5e6e;
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+.midlele .middle .mainperson .main1 .introduction .job {
+  padding: 1rem;
+  padding-right: 3rem;
+  gap: 1rem;
+  color: #c3c5d5;
+}
+.midlele .middle .mainperson .main1 .introduction .job i {
+  margin-right: 10px;
+}
+.midlele .middle .mainperson .main1 .introduction .job span {
+  color: rgb(8, 104, 137);
+}
+.midlele .middle .mainperson .main1 .introduction .home {
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  gap: 1rem;
+  color: #c3c5d5;
+}
+.midlele .middle .mainperson .main1 .introduction .home i {
+  margin-right: 9px;
+}
+.midlele .middle .mainperson .main1 .introduction .home span {
+  color: rgb(8, 104, 137);
+}
+.midlele .middle .mainperson .main1 .introduction .sport {
+  padding: 0.5rem 1rem 0rem 1rem;
+  gap: 1rem;
+  color: #c3c5d5;
+}
+.midlele .middle .mainperson .main1 .introduction .sport i {
+  margin-right: 10px;
+}
+.midlele .middle .mainperson .main1 .introduction .sport span {
+  color: rgb(8, 104, 137);
+}
+.midlele .middle .mainperson .main1 .winter {
+  margin: 1rem;
+  border-radius: 4px;
+  background: #05050c;
+}
+.midlele .middle .mainperson .main1 .winter .image {
+  position: relative;
+}
+.midlele .middle .mainperson .main1 .winter .image img {
+  margin: 1rem;
+  width: 19rem;
+}
+.midlele .middle .mainperson .main1 .winter .image .date {
+  position: absolute;
+  top: 41px;
+  left: 55px;
+}
+.midlele .middle .mainperson .main1 .winter .image .date #nula {
+  background-color: #1687fa;
+  padding: 7px 20px;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px 4px 0 0;
+}
+.midlele .middle .mainperson .main1 .winter .image .date #jan {
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 6px 0;
+  text-align: center;
+}
+.midlele .middle .mainperson .main1 .text {
+  padding-bottom: 7px;
+}
+.midlele .middle .mainperson .main1 .text p {
+  color: #c3c5d5;
+  margin-bottom: 5px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  padding: 0 14px;
+}
+.midlele .middle .mainperson .main1 .text span {
+  color: #5c5e6e;
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 0 14px;
+  margin-bottom: 15px;
+}
+.midlele .middle .mainperson .main1 .YourPage {
+  padding: 1rem;
+  font-size: 15px;
+  font-family: "DM Sans", sans-serif;
+  color: rgb(91, 91, 91);
+  margin: 1rem;
+  border-radius: 4px;
+  background: #05050c;
+}
+.midlele .middle .mainperson .main1 .YourPage p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.midlele .middle .mainperson .main1 .YourPage img {
+  border-radius: 50%;
+  width: 3rem;
+}
+.midlele .middle .mainperson .main1 .YourPage .glave {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+  gap: 1rem;
+}
+.midlele .middle .mainperson .main1 .YourPage .glave1 {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+  gap: 1rem;
+}
+.midlele .middle .mainperson .main1 .YourPage .glave2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main2 {
+  width: 100%;
+  border-radius: 4px;
+  margin-right: 1rem;
+  height: 100%;
+}
+.main2 .status {
+  margin-top: -4rem;
+  display: grid;
+  background-color: #05050c;
+  border-radius: 4px;
+}
+.main2 .status .section {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.main2 .status .section #active {
+  color: #ccc8db;
+  background-color: #9c9cab;
+}
+.main2 .status .section p {
+  text-decoration: none;
+  color: #ccc8db;
+  padding: 10px 14px;
+  line-height: 0.7;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.main2 .status .section p:hover {
+  background-color: #9c9cab;
+}
+.main2 .status .picture {
+  padding: 0.8rem;
+  display: flex;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  gap: 2rem;
+  border-bottom: 1px solid white;
+}
+.main2 .status .picture img {
+  width: 4rem;
+  border-radius: 50%;
+}
+.main2 .status .picture input {
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.main2 .status .check {
+  padding: 0.8rem;
+  display: flex;
+}
+.main2 .status .check .checkk {
+  display: flex;
+  gap: 1rem;
+  flex-grow: 1;
+}
+.main2 .status .check .checkk i {
+  display: flex;
+  gap: 1rem;
+  color: white;
+  margin-left: 1rem;
+  align-items: center;
+}
+.main2 .status .check .checkk p {
+  font-weight: 100;
+}
+.main2 .status .check .button {
+  background-color: #1b86f9;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-left: auto;
+  box-shadow: 0 0 20px #1b86f9;
+  cursor: pointer;
+}
+
+.bassd {
+  border-radius: 4px;
+  margin-top: 1rem;
+  background-color: #05050c;
+  padding: 1rem;
+}
+.bassd .basscontener .bass1 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.bassd .basscontener .bass1 span {
+  color: blue;
+}
+.bassd .basscontener .bass1 img {
+  margin-top: 1.5rem;
+  width: 4rem;
+  border-radius: 50%;
+}
+.bassd .basscontener #hour {
+  margin-left: 5rem;
+  margin-top: -2rem;
+  color: grey;
+}
+.bassd .basscontener .bass2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: gray;
+}
+.bassd .basscontener .bass3 {
+  display: flex;
+  gap: 0.7rem;
+}
+.bassd .basscontener .bass3 img {
+  border-radius: 4px;
+  width: 50%;
+  height: 30.7vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.bassd .basscontener .bass3 .basss3 img {
+  border-radius: 4px;
+  width: 100%;
+  height: 15vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.bassd .like {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  font-size: smaller;
+}
+.bassd .like i {
+  display: flex;
+  gap: 0.5rem;
+  color: gray;
+}
+
+.sti {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.right {
+  background: linear-gradient(to bottom, #151728 0%, #151728 100%, rgba(21, 23, 40, 0) 100%);
+}
+.right .main {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  color: #9c9cab;
+  gap: 1rem;
+}
+.right .main img {
+  border-radius: 50%;
+  width: 2rem;
+  border: 1px solid lightblue;
+}
+.right .stories {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.55);
+}
+.right #st {
+  color: #5c5e6e;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.right .person1 {
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.right .person1 p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.right .person1 span {
+  color: white;
+}
+.right img {
+  border-radius: 50%;
+  width: 3rem;
+  border: 2px solid yellow;
+}
+
+.contact {
+  padding-top: 2.5rem;
+  padding: 1rem;
+}
+.contact #cont {
+  color: #5c5e6e;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.contact .person5 {
+  display: flex;
+  margin-bottom: 1rem;
+  gap: 1rem;
+  align-items: center;
+}
+.contact .person6 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.contact .person6 span {
+  color: green;
+  font-weight: 1000;
+}
+
+.setting {
+  border-top: 1px solid rgba(255, 255, 255, 0.55);
+  margin-top: 2.5rem;
+  padding: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.setting i {
+  color: #9c9cab;
+}
+.setting input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: linear-gradient(to bottom, #151728 0%, #151728 100%, rgba(21, 23, 40, 0) 100%);
+}/*# sourceMappingURL=style.css.map */
